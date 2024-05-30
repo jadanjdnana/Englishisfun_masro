@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>CodePen - login &amp; signup form</title>
+    <link rel="stylesheet" href="login.css" />
+    <link rel="stylesheet" href="style.css" />
+
+    <script defer src=".vscode/js/script.js"></script>
+  </head>
+  <body class="login">
+    <header>
+      <div class="inner">
+        <div class="logo"><img src="gambar/1.png" /></div>
+        <nav>
+          <a class="active" href="index.html">HOME</a>
+          <a href="about.html">About Us</a>
+          <a href="video.html">Video</a>
+          <a href="login.html" class="donate-link"> LOGIN / SIGNUP</a>
+        </nav>
+        <div class="nav-item dropdown">
+          <a class="nav-link" href="Text.html">Materi</a>
+        </div>
+      </div>
+    </header>
+    <div class="container right-panel-active">
+      <!-- Sign Up -->
+      <div class="container__form container--signup">
+        <form action="#" class="form" id="form1">
+          <h2 class="form__title">Sign Up</h2>
+          <input type="text" placeholder="User" class="input" />
+          <input type="email" placeholder="Email" class="input" />
+          <input type="password" placeholder="Password" class="input" />
+          <a
+            href="login.html"
+            onclick="alert('Apakah data yang anda isi  sudah benar ? ')"
+          >
+            <button class="btn">Sign Up</button>
+          </a>
+        </form>
+      </div>
+
+      <!-- Sign In -->
+      <div class="container__form container--signin">
+        <form action="#" class="form" id="form2">
+          <h2 class="form__title">Sign In</h2>
+          <input type="email" placeholder="Email" class="input" />
+          <input type="password" placeholder="Password" class="input" />
+          <a href="#" class="link">Forgot your password?</a>
+          <a
+            href="login.html"
+            onclick="alert('Apakah data yang anda isi  sudah benar ? ')"
+          >
+            <button class="btn">Sign In</button>
+          </a>
+        </form>
+      </div>
+
+      <!-- Overlay -->
+      <div class="container__overlay">
+        <div class="overlay">
+          <div class="overlay__panel overlay--left">
+            <button class="btn" id="signIn">Sign In</button>
+          </div>
+          <div class="overlay__panel overlay--right">
+            <button class="btn" id="signUp">Sign Up</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

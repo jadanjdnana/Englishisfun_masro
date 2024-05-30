@@ -1,0 +1,180 @@
+body {
+  background-image: url("gambar/img.jpg");
+  background-size: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: sans-serif;
+}
+.container {
+  padding-top: 7rem; /* Atur padding sebesar 1 unit untuk sisi atas */
+  padding-right: 10.4rem; /* Atur padding sebesar 10.4 unit untuk sisi kanan */
+  padding-left: 10.4rem; /* Atur padding sebesar 10.4 unit untuk sisi kiri */
+}
+
+header {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.391);
+  border-bottom: 3px solid #9d8a8a;
+  border-radius: 1px;
+  background-position: center top;
+  background-size: auto 200px;
+  background-repeat: repeat-x;
+}
+header .inner {
+  max-width: 1060px;
+  margin: 0 auto;
+  display: flex;
+  height: 70px;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+header .logo {
+  display: block;
+  width: 76px;
+  height: 80px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: center;
+}
+header .logo img {
+  width: 70px;
+  margin-top: 10px;
+}
+header nav {
+  display: none;
+}
+
+.nav-link {
+  color: #cb7d7d;
+  text-decoration: none;
+  padding: 10px;
+  font-family: "Arial", serif;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 15px;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #fff9f9;
+  min-width: 110px;
+  font-family: "Arial", serif;
+  letter-spacing: 3px;
+  font-size: 12px;
+}
+
+.dropdown-item {
+  display: block;
+  padding: 10px;
+  color: #f42929;
+  text-decoration: none;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+  color: #e6eeeb;
+}
+
+header nav a {
+  font-family: "Arial", serif;
+  font-size: 15px;
+  color: #cb7d7d;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+header nav a:hover {
+  color: #e6eeeb;
+  text-shadow: #e0ac1c;
+}
+@media screen and (min-width: 800px) {
+  header nav {
+    display: block;
+  }
+}
+header .burger {
+  display: block;
+  position: relative;
+  top: -6px;
+  padding-left: 30px;
+}
+header .burger:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 30px;
+  height: 2px;
+  background: white;
+  box-shadow: 0 12px 0 0 white, 0 6px 0 0 white;
+}
+@media screen and (min-width: 800px) {
+  header .burger {
+    display: none;
+  }
+}
+header .donate-link {
+  width: 60 px;
+  text-align: right;
+  position: absolute;
+  right: 20px;
+  top: 27px;
+  font-family: "Arial", sans-serif;
+  font-size: 12px;
+  color: #cb7d7d;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  text-decoration: none;
+  padding-bottom: 6px;
+  border-bottom: 2px solid rgba(230, 23, 23, 0.3);
+  font-size: 15px;
+}
+.content {
+  max-width: 1200px;
+  margin: 20px;
+  padding: 20px;
+  background: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.content h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.video-section {
+  margin-bottom: 50px;
+}
+
+.video-section h2 {
+  color: #333;
+}
+
+.video-item {
+  flex: 1 1 calc(50% - 40px);
+  background: #f9f9f9;
+  padding: 10px;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  max-width: 900px;
+  margin: 20px; /* Add margin to ensure proper spacing */
+  justify-content: center;
+}
+
+.video-item iframe {
+  width: 100%;
+  height: 200px;
+}
